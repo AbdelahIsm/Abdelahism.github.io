@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mijn Portfolio</title>
+    <title> Abdelah Ismaili's first website!</title>
     <style>
         /* BASISSTYLING */
         body {
-            font-family: Arial;
+            font-family: Aptos;
             margin: 0;
             background-color: #f4f4f4;
+            padding: 20px;
         }
         
         /* HOOFDTITEL */
@@ -17,33 +18,63 @@
         }
         
         /* KNOP STYLING */
-        .btn {
+        .btn1 {
             background: blue;
             color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
+            padding: 25px 50px;
+            border: 4px solid darkblue;
+            border-radius: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        
+        .btn1:hover {
+            background: darkblue;
+        }
+        
+        /* STUDENT INFO STYLING */
+        .student-info {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
     <!-- HOOFDSECTIE -->
     <h1>Hallo wereld! 🌍</h1>
-    <p>Dit is mijn eerste website op GitHub Pages.</p>
+    <h2> Gegevens ontwerper website : </h2>
+    
+    <div class="student-info">
+        <p><strong>Naam:</strong> Abdelah Ismaili</p>
+        <p><strong>Klas:</strong> 1EM4</p>
+        <p><strong>Studentennummer:</strong> 160451</p>
+        <p><strong>Email:</strong> s160451@ap.be</p>
+    </div>
     
     <!-- PORTFOLIO SECTIE -->
-    <h2>Hallo, ik ben [Naam]</h2>
-    <button class="btn">Klik mij</button>
+    <h2>Hey, klik op de blauwe drukknop om je naam in te geven!</h2>
+    <button class="btn1" id="greetButton">Identificeren</button>
 
     <script>
         // Laat een welkomstbericht zien in de console
         console.log("Pagina geladen!");
         
-        /* To-do: Interactieve functies
-        document.querySelector('.btn').addEventListener('click', () => {
-            alert('Knop geklikt!');
+        // Interactieve functie voor de knop
+        document.getElementById('greetButton').addEventListener('click', function() {
+            // Vraag de naam van de bezoeker
+            const userName = prompt("Hallo! Wat is je naam?");
+            
+            // Controleer of de gebruiker iets heeft ingevuld
+            if (userName) {
+                alert("Welkom " + userName + "! Leuk dat je er bent!");
+            } else {
+                alert("Welkom, u zal verder gaan als een anonieme bezoeker!");
+            }
         });
-        */
     </script>
 </body>
 </html>
