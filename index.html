@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mijn eerste website</title>
+    <title>Mijn Portfolio</title>
+    <style>
+        /* BASISSTYLING */
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        
+        /* HOOFDTITEL */
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+        
+        /* KNOP STYLING */
+        .btn {
+            background: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
+    <!-- HOOFDSECTIE -->
     <h1>Hallo wereld! 🌍</h1>
     <p>Dit is mijn eerste website op GitHub Pages.</p>
+    
+    <!-- PORTFOLIO SECTIE -->
+    <h2>Hallo, ik ben [Naam]</h2>
+    <button class="btn">Klik mij</button>
+
+    <script>
+        // Laat een welkomstbericht zien in de console
+        console.log("Pagina geladen!");
+        
+        /* To-do: Interactieve functies
+        document.querySelector('.btn').addEventListener('click', () => {
+            alert('Knop geklikt!');
+        });
+        */
+    </script>
 </body>
 </html>
